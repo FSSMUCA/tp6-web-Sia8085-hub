@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP6 - Calculatrice Web & Introduction PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini-Application Web Avancée (TP 6)</h1>
+        <nav>
+            <a href="info.php">Voir la page PHP</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-section">
+            <h2>Calculatrice Locale</h2>
+            
+            <form id="calculator-form">
+                <div class="input-group">
+                    <label for="numberA">Nombre A :</label>
+                    <input type="number" id="numberA" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="numberB">Nombre B :</label>
+                    <input type="number" id="numberB" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="operation">Opération :</label>
+                    <select id="operation" required>
+                        <option value="plus">+</option>
+                        <option value="minus">−</option>
+                        <option value="times">×</option>
+                        <option value="divide">÷</option>
+                    </select>
+                </div>
+                
+                <button type="submit" id="calculate-btn">Calculer</button>
+            </form>
+            
+            <div id="error-message" class="error-zone"></div>
+        </section>
+
+        <section class="history-section card">
+            <h2>Historique des Opérations</h2>
+            <ul id="history-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; TP6 - HTML, CSS, JS, PHP. Design Responsive.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
